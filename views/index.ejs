@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+
+	<title>
+		<%= title %>
+	</title>
+</head>
+
+<body>
+	<div id="container">
+		<article>
+			<button class="dismiss">
+				<ion-icon name="close-outline"></ion-icon>
+			</button>
+			<menu>
+				<label class="darkswitch" for="checkbox">
+					<input type="checkbox" id="checkbox" />
+					<div class="slider"></div>
+					<ion-icon name="sunny" class="sun"></ion-icon>
+				</label>
+			</menu>
+			<nav class="centerwrap" id="booknav">
+				<h1 id="book"></h1>
+				<ul id="bookselect"></ul>
+			</nav>
+			<nav class="centerwrap" id="chapternav">
+				<h2 id="chapter"></h2>
+				<ul id="chapterselect">
+				</ul>
+			</nav>
+			<p id="passage"></p>
+		</article>
+	</div>
+	<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+	<!-- partial -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+	<script src="/javascripts/script.js"></script>
+</body>
+
+</html>
